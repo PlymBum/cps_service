@@ -1,0 +1,76 @@
+.services {
+    &__about {
+        margin-top: 24px;
+    }
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+    &__text {
+        padding: 0;
+        margin: 0;
+        margin-left: 16px;
+        margin-right: 16px;
+        // font-family: TT Lakes;
+        font-size: 14px;
+        text-align: left;
+        margin-bottom: 16px;
+        margin-top: 24px;
+    }
+    &__show-more-btn {
+        display: inline-block;
+        background-color: inherit;
+        border: none;
+        background-image: url(../assets/img/expand.svg);
+        background-repeat: no-repeat;
+        margin-bottom: 16px;
+        height: 24px;
+        // font-family: 'TT Lakes';
+        font-size: 16px;
+        color: #1B1C21;
+        padding-left: 32px;
+        margin-left: 20px;
+        align-self: flex-start;
+    }
+    &__img {
+        width: 320px;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .services {
+        &__about {
+            margin-top: 32px;
+        }
+    }
+    .about {
+        flex-direction: row;
+        &__img {
+            width: 360px;
+            height: auto;
+        }
+    }
+}
+
+@media (min-width: 1120px) {
+    // .main-wrapper {
+    //     display: flex;
+    // }
+    // .main__services {
+    //     padding-top: 24px;
+    // }
+    .services {
+        &__about {
+            margin-top: 20px;
+        }
+    }
+    .about {
+        &__img {
+            width: 532px;
+            height: auto;
+        }
+    }
+}

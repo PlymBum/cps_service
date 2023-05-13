@@ -1,0 +1,192 @@
+    html {
+        box-sizing: border-box;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'TT Lakes';
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+        cursor: default;
+    }
+    
+    .burger {
+        min-width: 320px;
+        max-width: 320px;
+        float: left;
+    }
+    
+    .burger__wrapper {
+        padding: 18px 24px 32px 24px;
+        min-height: 100vh;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    }
+    
+    .btn-round {
+        padding: 0;
+        margin: 0;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: none;
+        background-color: #FF3E79;
+        --color: white;
+        transition-property: background-color;
+        transition-duration: 200ms;
+    }
+    
+    .btn-round:hover {
+        background-color: #f0c8d4;
+        --color: #FF3E79;
+    }
+    
+    .burger__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    
+    .burger__btn {
+        position: relative;
+    }
+    
+    .burger__btn:last-child {
+        margin-left: auto;
+    }
+    
+    .burger__logo {
+        display: inline-block;
+        margin-left: 17px;
+        width: 97px;
+        height: 55px;
+        background: url(../assets/img/logo.svg) no-repeat;
+    }
+    
+    .services {
+        margin: 0;
+        padding: 0;
+        margin-top: 24px;
+        list-style: none;
+        display: flex;
+        flex-flow: column;
+        font-size: 16px;
+        color: black;
+        row-gap: 32px;
+    }
+    
+    .services__item {
+        display: block;
+        position: relative;
+        transition: color 400ms;
+    }
+    
+    .services__item--active {
+        color: #7e7e82;
+    }
+    
+    .services__item--active:before {
+        content: "";
+        height: 32px;
+        width: 4px;
+        position: absolute;
+        left: -20px;
+        top: -8px;
+        background: #41F6D7;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    
+    .services__item:hover:not(.services__item--active) {
+        color: #FF3E79;
+    }
+    
+    .services__item:not(.services__item--active):hover::before {
+        content: "";
+        height: 32px;
+        width: 2px;
+        position: absolute;
+        left: -20px;
+        top: -8px;
+        background: #FF3E79;
+        opacity: 0.2;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    
+    .burger__footer {
+        margin-top: auto;
+    }
+    
+    .burger__contact-us {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 16px;
+    }
+    
+    .contact-us__btn:not(.contact-us__btn:first-child) {
+        margin-left: 16px;
+    }
+    
+    .burger__contacts {
+        clear: both;
+        color: #1b1c21;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    
+    .contacts__email {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .contacts__phone {
+        display: block;
+        font-size: 24px;
+    }
+    
+    .contacts__phone:hover,
+    .contacts__email:hover {
+        color: #FF3E79;
+    }
+    
+    .language__items {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        color: #1b1c21;
+        font-size: 16px;
+    }
+    
+    .language__checkbox {
+        padding: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: absolute;
+    }
+    
+    .language__item {
+        transition: color 400ms;
+        margin-right: 7px;
+    }
+    
+    .language__checkbox:checked+.language__item {
+        color: #7e7e82;
+    }
+    
+    .language__item:hover {
+        color: #FF3E79;
+    }

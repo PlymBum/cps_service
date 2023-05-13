@@ -1,0 +1,175 @@
+@import '../../node_modules/swiper/swiper-bundle.css';
+$color-pgn: #DDDDDD;
+$color-btn: #FF3E79;
+$color-btn-hover:#f0c8d4;
+$color-text: #1B1C21;
+$color-card-bg: #FFFFFF;
+$color-title: #7E7E82;
+$color-card-border: #EAEAEA;
+$color-pgn-active: #B5B6BC;
+$color-title-border: #D9FFF5;
+// $title-gradient: linear-gradient(-270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+$title-gradient: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+$color-background: #F8F8F8;
+.repair {
+    // z-index: 6;
+    &__services {
+        margin-bottom: 32px;
+    }
+    &--brand {}
+    &__title {
+        // box-sizing: border-box;
+        height: 80px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.20000000298023224px;
+        text-align: left;
+        padding: 16px;
+        margin: 0;
+        margin-bottom: 16px;
+        color: $color-title;
+        font-weight: 400;
+        background: $title-gradient;
+        border-top: 1px solid $color-title-border;
+    }
+    &__cards {
+        margin-left: 16px;
+        margin-bottom: 24px;
+    }
+    &__slider {
+        margin-bottom: 32px;
+    }
+    &__item {
+        // width: 240px;
+        // height: 72px;
+        // list-style: none;
+        // margin: 0;
+        // padding: 0;
+        // margin-right: 16px;
+        // vertical-align: middle;
+        // &--brand {}
+    }
+    &__btn {
+        display: inline-block;
+        position: relative;
+        box-sizing: border-box;
+        width: inherit;
+        height: inherit;
+        border: 1px solid $color-card-border;
+        border-radius: 6px;
+        background: $color-card-bg;
+        text-align: left;
+        padding-top: 16px;
+        padding-left: 16px;
+        vertical-align: middle;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            border: 2px solid $color-btn;
+            right: 14px;
+            bottom: 15px;
+            background: url(../assets/img/slider_btn/dropdown.svg) no-repeat 15px 50%;
+            transition-duration: 500ms;
+        }
+        &:hover::after {
+            border-color: $color-btn-hover;
+            background-color: $color-btn-hover;
+        }
+    }
+    &__btn-show-more {
+        display: none;
+        &.repair__btn-show-more--open::before {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $color-pgn;
+    &-active {
+        background-color: $color-pgn-active;
+    }
+}
+
+@media (min-width:768px) {
+    .repair {
+        &__pagination {
+            display: none;
+        }
+        &__title {
+            padding-left: 24px;
+            margin-bottom: 24px;
+            background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+        }
+        &__cards {
+            margin-left: 24px;
+        }
+        &__slider {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding: 0;
+            margin-right: 24px;
+            /* margin-right: 0px; */
+            height: 160px;
+            overflow: hidden;
+        }
+        // &__slider--show-all {
+        //     height: auto;
+        //     transition-property: height;
+        //     transition-duration: 500ms;
+        // }
+        &__btn {
+            background-position: 168px 50%;
+        }
+        &__btn-show-more {
+            position: relative;
+            display: block;
+            margin-left: 40px;
+            margin-top: 24px;
+            border: none;
+            background: none;
+            font-size: 16px;
+            padding: none;
+        }
+        &__btn-show-more::before {
+            position: absolute;
+            content: "";
+            background-image: url(../assets/img/expand.svg);
+            width: 24px;
+            height: 24px;
+            left: -24px;
+            top: -2px;
+        }
+        &__btn-show-more.slider__btn-show-more--open::before {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+@media (min-width:1120px) {
+    .repair {
+        &__title {
+            margin-bottom: 24px;
+            padding-left: 32px;
+            background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+            //background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+        }
+        &__cards {
+            margin-left: 32px;
+        }
+        &__slider--show-all {
+            height: auto
+        }
+        &__btn {
+            background-position: 184px 50%;
+        }
+    }
+}

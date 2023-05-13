@@ -1,0 +1,118 @@
+$color-pgn: #DDDDDD;
+$color-btn: #FF3E79;
+$color-btn-hover:#f0c8d4;
+$color-text: #1B1C21;
+$color-card-bg: #FFFFFF;
+$color-title: #7E7E82;
+$color-card-border: #EAEAEA;
+$color-pgn-active: #B5B6BC;
+$color-title-border: #D9FFF5;
+.prices {
+    font-size: 14px;
+    // font-family: TT Lakes;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;
+    // text-align: left;
+    height: auto;
+    &__title {
+        margin-top: 16px;
+        margin-bottom: 4px;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #7e7e82;
+        font-weight: 400;
+    }
+    &__item {
+        position: relative;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 260px;
+        height: 200px;
+        padding: 16px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        margin-right: 16px;
+    }
+    &__service-title {
+        margin-top: 0;
+    }
+    &__service {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 16px;
+    }
+    &__price-title {}
+    &__price {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 16px;
+    }
+    &__time-title {
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+    &__time {
+        margin: 0;
+        padding: 0;
+    }
+    &__btn {
+        // text-transform: uppercase;
+        // letter-spacing: -0.15px;
+        // border: none;
+        // color: #FFFFFF;
+        position: absolute;
+        width: 119px;
+        height: 32px;
+        right: 16px;
+        bottom: 16px;
+        // border-radius: 16px;
+        // background-color: $color-btn;
+        // -webkit-border-radius: 16px;
+        // -moz-border-radius: 16px;
+        // -ms-border-radius: 16px;
+        // -o-border-radius: 16px;
+        // border: 1px solid $color-btn;
+    }
+    &__gloss {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    &__text {
+        color: $color-text
+    }
+    &__proposal {
+        margin-top: 24px;
+        display: inline-block;
+        position: relative;
+        font-size: 16px;
+        color: $color-text;
+        font-weight: 600;
+        letter-spacing: -0.2px;
+    }
+    &__proposal::after {
+        content: "";
+        position: absolute;
+        background: url("/src/assets/img/slider_btn/dropdown.svg") no-repeat;
+        width: 12px;
+        height: 12px;
+        transform: translate(10px, 3px);
+        -webkit-transform: translate(10px, 3px);
+        -moz-transform: translate(10px, 3px);
+        -ms-transform: translate(10px, 3px);
+        -o-transform: translate(10px, 3px);
+    }
+}
+
+@media (min-width:768px) {
+    .repair {
+        &__services--price {
+            display: none;
+        }
+    }
+}
