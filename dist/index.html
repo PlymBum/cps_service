@@ -1,13 +1,762 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="ru">
+
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Webpack 4 Starter</title>
-  <link href="style.css" rel="stylesheet"></head>
-  <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px">
-    <h3>Welcome to Webpack 4 starter </h3>
-  <script type="text/javascript" src="./js/bundle.js"></script></body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CPS Сервис</title>
+<link href="style.css" rel="stylesheet"></head>
+
+<body>
+
+
+    <header class="header">
+        <div class="header__burger">
+            <button class="header__button btn--round header__button--burger">
+                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.447715 0 1 0H17C17.5523 0 18 0.447715 18 1C18 1.55228 17.5523 2 17 2H1C0.447716 2 0 1.55228 0 1ZM0 8C0 7.44772 0.447715 7 1 7H9C9.55228 7 10 7.44772 10 8C10 8.55229 9.55229 9 9 9H1C0.447715 9 0 8.55229 0 8ZM1 14C0.447715 14 0 14.4477 0 15C0 15.5523 0.447716 16 1 16H13C13.5523 16 14 15.5523 14 15C14 14.4477 13.5523 14 13 14H1Z" fill="white"/>
+                    </svg>
+                    
+            </button>
+        </div>
+
+        <a href="#" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
+
+        <ul class="header__actions">
+            <li>
+                <button class="btn--round header__button header__button--call btn__callback">
+                    <svg width="18 " height="18 " viewBox="0 0
+                                        18 18 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                            <path fill-rule="evenodd " clip-rule="evenodd " d="M1.76019
+                                            12.25L4.30019 11.96C4.91019 11.89
+                                            5.51019 12.1 5.94019 12.53L7.78019
+                                            14.37C10.6102 12.93 12.9302 10.62
+                                            14.3702 7.78L12.5202 5.93C12.0902
+                                            5.5 11.8802 4.9 11.9502
+                                            4.29L12.2402 1.77C12.3602 0.76
+                                            13.2102 0 14.2302 0H15.9602C17.0902
+                                            0 18.0302 0.94 17.9602 2.07C17.4302
+                                            10.61 10.6002 17.43 2.07019
+                                            17.96C0.940193 18.03 0.00019455
+                                            17.09 0.00019455
+                                            15.96V14.23C-0.00980568 13.22
+                                            0.750193 12.37 1.76019 12.25Z
+                                            " fill="var(--color) "/>
+                        </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn--round header__button header__button--chat btn__msg">
+                    <svg width="20 " height="20 " viewBox="0
+                                            0 20 20 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                            <path fill-rule="evenodd " clip-rule="evenodd " d="M18
+                                                0H2C0.9 0 0.01 0.9 0.01 2L0 20L4
+                                                15H18C19.1 15 20 14.1 20 13V2C20
+                                                0.9 19.1 0 18 0ZM11 11H5C4.45 11
+                                                4 10.55 4 10C4 9.45 4.45 9 5
+                                                9H11C11.55 9 12 9.45 12 10C12
+                                                10.55
+                                                11.55 11 11 11ZM15 6H5C4.45 6 4
+                                                5.55 4 5C4 4.45 4.45 4 5
+                                                4H15C15.55 4 16 4.45 16 5C16
+                                                5.55 15.55 6 15 6Z " fill="var(--color) "/>
+                        </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn--round header__button header__button--profile">
+                    <svg width="20 " height="19 " viewBox="0 0 20 19 " fill="none
+                                                " xmlns="http://www.w3.org/2000/svg
+                                                ">
+                            <path d="M10.5 9C12.9853 9 15
+                                                    6.98528 15 4.5C15 2.01472
+                                                    12.9853 0 10.5 0C8.01472 0 6
+                                                    2.01472 6 4.5C6 6.98528
+                                                    8.01472 9 10.5 9Z " fill="var(--color) "/>
+                            <path d="M0.0165859
+                                                        16.6118C-0.113065
+                                                        17.3412 0.535191 18
+                                                        1.33903
+                                                        18H18.6604C19.4902 18
+                                                        20.1125 17.3412 19.9829
+                                                        16.6118C19.2309 12.4
+                                                        15.0561 10 9.99973
+                                                        10C4.94333 10 0.768563
+                                                        12.4 0.0165859 16.6118Z
+                                                        " fill="var(--color) "/>
+                        </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn--round header__button header__button--repair">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.25807 13.4583L8.66685 13.0494L6.94998 11.3322L6.54121 11.7411L6.33682 11.5367C6.0098 11.1687 5.68278 10.9643 5.35575 11.0052C5.11049 11.0052 4.9061 11.1687 4.74259 11.414C4.49732 11.8229 4.61996 12.2726 4.66083 12.5588C4.66083 12.6406 4.70171 12.6815 4.70171 12.7632C4.70171 12.8859 4.70171 13.0494 4.41557 13.0903C4.00679 13.213 3.47538 13.3356 2.94397 13.6218C2.20817 14.0307 1.71764 14.3987 1.4315 14.7666C-0.0809772 16.7291 0.000778159 18.4055 0.000778159 18.4872C0.000778159 18.6099 0.0416558 18.6917 0.123411 18.7325L1.22711 19.8773C1.30886 19.9591 1.39062 20 1.47237 20C1.47237 20 1.51325 20 1.59501 20C2.00378 20 3.47538 19.9182 5.19224 18.569C5.56014 18.2828 5.92804 17.7922 6.33682 17.0562C6.62296 16.5656 6.78647 16.0341 6.86823 15.5844C6.94998 15.2982 7.07262 15.2982 7.19525 15.2982C7.23613 15.2982 7.31788 15.339 7.39964 15.339C7.56315 15.3799 7.72666 15.4208 7.93105 15.4208C8.13544 15.4208 8.33983 15.3799 8.54421 15.2573C8.78948 15.0937 8.95299 14.8893 8.99387 14.644C9.03475 14.3169 8.87123 13.9898 8.50334 13.7036L8.25807 13.4583Z" fill="white"/>
+                        <path d="M16.884 4.87841L18.0188 4.32603C18.0609 4.28354 18.1449 4.24105 18.1869 4.19856L19.9101 1.86157C20.0362 1.69161 20.0362 1.43667 19.8681 1.3092L18.6913 0.119458C18.5652 -0.00801422 18.313 -0.0505049 18.1449 0.076967L15.8333 1.81908C15.7913 1.86157 15.7493 1.90406 15.7072 1.98905L15.1609 3.13629L11 7.21539L12.7652 9L16.884 4.87841Z" fill="white"/>
+                        <path d="M17.8527 13.0448C16.8636 12.0036 15.4393 11.6288 14.0941 12.0036L7.64527 5.17331C7.72439 4.79848 7.76396 4.46529 7.76396 4.09046C7.76396 3.04926 7.36832 2.00806 6.61661 1.21675C5.58796 0.0922529 4.04498 -0.282579 2.6207 0.217197C2.54157 0.258845 2.42288 0.383789 2.38331 0.550381C2.38331 0.675325 2.42288 0.800269 2.50201 0.925213L4.44062 2.96597C4.87582 3.42409 4.87582 4.21541 4.44062 4.67353C4.00542 5.13166 3.25371 5.13166 2.81851 4.67353L0.8799 2.63278C0.76121 2.54949 0.642519 2.50784 0.484265 2.54949C0.365574 2.54949 0.246884 2.67443 0.20732 2.79937C-0.267442 4.25705 0.0886295 5.88133 1.11728 6.96417C1.82943 7.75549 2.85808 8.17197 3.88673 8.17197C4.20324 8.17197 4.55931 8.13032 4.87582 8.04702L11.3642 14.8773C11.0082 16.2933 11.4038 17.7927 12.3533 18.8339C13.105 19.6252 14.0546 20 15.0832 20C15.5184 20 15.914 19.9167 16.3492 19.7918C16.4679 19.7501 16.5866 19.6252 16.6262 19.5002C16.6658 19.3753 16.6262 19.2087 16.5075 19.1254L14.5689 17.0846C14.3711 16.8764 14.2128 16.5432 14.2128 16.21C14.2128 15.8768 14.3315 15.5853 14.5689 15.3354C14.8063 15.0855 15.0832 14.9606 15.3997 14.9606C15.7162 14.9606 15.9932 15.0855 16.2306 15.3354L18.1692 17.3762C18.2879 17.4595 18.4065 17.5011 18.5252 17.5011C18.6439 17.4595 18.7626 17.3762 18.8022 17.2512C18.9209 16.8348 19 16.3766 19 15.9185C19 14.8356 18.6044 13.7944 17.8527 13.0448Z" fill="white"/>
+                        </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn--round header__button header__button--checkstatus">
+                    <svg data-v-656ad1c2="" width="16" height="20" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g data-v-656ad1c2="" id="Symbols" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd"><g data-v-656ad1c2="" id="ic/checkstatus" transform="translate(-12.000000, -10.000000)"><path data-v-656ad1c2="" d="M13.5,29.9998923 C13.4999418,29.1715147 12.8283912,28.5 12,28.5 L11.9999475,10.9998923 C11.9999475,10.4476076 12.4476628,9.99989231 12.9999475,9.99989231 L27,9.99989231 C27.5522847,9.99989231 28,10.4476076 28,10.9998923 L28,28.5 C27.1716088,28.5 26.5000582,29.1715147 26.5,29.9998923 L25.5,29.9998923 C25.4999418,29.1715147 24.8283912,28.5 24,28.5 C23.1716088,28.5 22.5000582,29.1715147 22.5,29.9998923 L21.5,29.9998923 C21.4999418,29.1715147 20.8283912,28.5 20,28.5 C19.1716088,28.5 18.5000582,29.1715147 18.5,29.9998923 L17.5,29.9998923 C17.4999418,29.1715147 16.8283912,28.5 16,28.5 C15.1716088,28.5 14.5000582,29.1715147 14.5,29.9998923 L13.5,29.9998923 Z M21.4163511,21.7884238 L23.5252772,23.8972759 C23.8991323,24.2711179 24.5126381,24.2711179 24.8960793,23.8876903 C25.2699344,23.5138483 25.2699344,22.900364 24.8960793,22.5265221 L22.7871531,20.4272556 C23.3239707,19.5741291 23.5827934,18.5484601 23.4006589,17.4365199 C23.103492,15.6439956 21.6560018,14.1677991 19.8538285,13.8802284 C16.949262,13.4201152 14.4952388,15.8261238 14.8595078,18.7114169 C15.0895725,20.5326983 16.5274767,22.0472375 18.32965,22.3827367 C19.4703873,22.5936219 20.5536085,22.3443939 21.4163511,21.7884238 Z M19.0588235,15.7058824 C20.3576471,15.7058824 21.4117647,16.76 21.4117647,18.0588235 C21.4117647,19.3576471 20.3576471,20.4117647 19.0588235,20.4117647 C17.76,20.4117647 16.7058824,19.3576471 16.7058824,18.0588235 C16.7058824,16.76 17.76,15.7058824 19.0588235,15.7058824 Z" id="icon"></path></g></g></svg>                        </button>
+
+                
+            </li>
+        </ul>
+
+    </header>
+
+    <main class="main__services services">
+        <div class="services__title">
+            <h1>
+                Услуги и сервисы
+            </h1>
+            <ul class="services__actions">
+                <li>
+                    <label class="services__btn-wraper">
+                        Оставить заявку
+                        <button class="btn--round round services__btn services__btn-repair">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.25807 13.4583L8.66685 13.0494L6.94998 11.3322L6.54121 11.7411L6.33682 11.5367C6.0098 11.1687 5.68278 10.9643 5.35575 11.0052C5.11049 11.0052 4.9061 11.1687 4.74259 11.414C4.49732 11.8229 4.61996 12.2726 4.66083 12.5588C4.66083 12.6406 4.70171 12.6815 4.70171 12.7632C4.70171 12.8859 4.70171 13.0494 4.41557 13.0903C4.00679 13.213 3.47538 13.3356 2.94397 13.6218C2.20817 14.0307 1.71764 14.3987 1.4315 14.7666C-0.0809772 16.7291 0.000778159 18.4055 0.000778159 18.4872C0.000778159 18.6099 0.0416558 18.6917 0.123411 18.7325L1.22711 19.8773C1.30886 19.9591 1.39062 20 1.47237 20C1.47237 20 1.51325 20 1.59501 20C2.00378 20 3.47538 19.9182 5.19224 18.569C5.56014 18.2828 5.92804 17.7922 6.33682 17.0562C6.62296 16.5656 6.78647 16.0341 6.86823 15.5844C6.94998 15.2982 7.07262 15.2982 7.19525 15.2982C7.23613 15.2982 7.31788 15.339 7.39964 15.339C7.56315 15.3799 7.72666 15.4208 7.93105 15.4208C8.13544 15.4208 8.33983 15.3799 8.54421 15.2573C8.78948 15.0937 8.95299 14.8893 8.99387 14.644C9.03475 14.3169 8.87123 13.9898 8.50334 13.7036L8.25807 13.4583Z" fill="white"/>
+                                <path d="M16.884 4.87841L18.0188 4.32603C18.0609 4.28354 18.1449 4.24105 18.1869 4.19856L19.9101 1.86157C20.0362 1.69161 20.0362 1.43667 19.8681 1.3092L18.6913 0.119458C18.5652 -0.00801422 18.313 -0.0505049 18.1449 0.076967L15.8333 1.81908C15.7913 1.86157 15.7493 1.90406 15.7072 1.98905L15.1609 3.13629L11 7.21539L12.7652 9L16.884 4.87841Z" fill="white"/>
+                                <path d="M17.8527 13.0448C16.8636 12.0036 15.4393 11.6288 14.0941 12.0036L7.64527 5.17331C7.72439 4.79848 7.76396 4.46529 7.76396 4.09046C7.76396 3.04926 7.36832 2.00806 6.61661 1.21675C5.58796 0.0922529 4.04498 -0.282579 2.6207 0.217197C2.54157 0.258845 2.42288 0.383789 2.38331 0.550381C2.38331 0.675325 2.42288 0.800269 2.50201 0.925213L4.44062 2.96597C4.87582 3.42409 4.87582 4.21541 4.44062 4.67353C4.00542 5.13166 3.25371 5.13166 2.81851 4.67353L0.8799 2.63278C0.76121 2.54949 0.642519 2.50784 0.484265 2.54949C0.365574 2.54949 0.246884 2.67443 0.20732 2.79937C-0.267442 4.25705 0.0886295 5.88133 1.11728 6.96417C1.82943 7.75549 2.85808 8.17197 3.88673 8.17197C4.20324 8.17197 4.55931 8.13032 4.87582 8.04702L11.3642 14.8773C11.0082 16.2933 11.4038 17.7927 12.3533 18.8339C13.105 19.6252 14.0546 20 15.0832 20C15.5184 20 15.914 19.9167 16.3492 19.7918C16.4679 19.7501 16.5866 19.6252 16.6262 19.5002C16.6658 19.3753 16.6262 19.2087 16.5075 19.1254L14.5689 17.0846C14.3711 16.8764 14.2128 16.5432 14.2128 16.21C14.2128 15.8768 14.3315 15.5853 14.5689 15.3354C14.8063 15.0855 15.0832 14.9606 15.3997 14.9606C15.7162 14.9606 15.9932 15.0855 16.2306 15.3354L18.1692 17.3762C18.2879 17.4595 18.4065 17.5011 18.5252 17.5011C18.6439 17.4595 18.7626 17.3762 18.8022 17.2512C18.9209 16.8348 19 16.3766 19 15.9185C19 14.8356 18.6044 13.7944 17.8527 13.0448Z" fill="white"/>
+                                </svg>
+                        </button>
+                    </label>
+
+
+
+                </li>
+                <li>
+                    <label class="services__btn-wraper">
+                        Статус ремонта
+                        <button class="btn--round services__btn services__btn-checkstatus">
+                            <svg data-v-656ad1c2="" width="16" height="20" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g data-v-656ad1c2="" id="Symbols" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd"><g data-v-656ad1c2="" id="ic/checkstatus" transform="translate(-12.000000, -10.000000)"><path data-v-656ad1c2="" d="M13.5,29.9998923 C13.4999418,29.1715147 12.8283912,28.5 12,28.5 L11.9999475,10.9998923 C11.9999475,10.4476076 12.4476628,9.99989231 12.9999475,9.99989231 L27,9.99989231 C27.5522847,9.99989231 28,10.4476076 28,10.9998923 L28,28.5 C27.1716088,28.5 26.5000582,29.1715147 26.5,29.9998923 L25.5,29.9998923 C25.4999418,29.1715147 24.8283912,28.5 24,28.5 C23.1716088,28.5 22.5000582,29.1715147 22.5,29.9998923 L21.5,29.9998923 C21.4999418,29.1715147 20.8283912,28.5 20,28.5 C19.1716088,28.5 18.5000582,29.1715147 18.5,29.9998923 L17.5,29.9998923 C17.4999418,29.1715147 16.8283912,28.5 16,28.5 C15.1716088,28.5 14.5000582,29.1715147 14.5,29.9998923 L13.5,29.9998923 Z M21.4163511,21.7884238 L23.5252772,23.8972759 C23.8991323,24.2711179 24.5126381,24.2711179 24.8960793,23.8876903 C25.2699344,23.5138483 25.2699344,22.900364 24.8960793,22.5265221 L22.7871531,20.4272556 C23.3239707,19.5741291 23.5827934,18.5484601 23.4006589,17.4365199 C23.103492,15.6439956 21.6560018,14.1677991 19.8538285,13.8802284 C16.949262,13.4201152 14.4952388,15.8261238 14.8595078,18.7114169 C15.0895725,20.5326983 16.5274767,22.0472375 18.32965,22.3827367 C19.4703873,22.5936219 20.5536085,22.3443939 21.4163511,21.7884238 Z M19.0588235,15.7058824 C20.3576471,15.7058824 21.4117647,16.76 21.4117647,18.0588235 C21.4117647,19.3576471 20.3576471,20.4117647 19.0588235,20.4117647 C17.76,20.4117647 16.7058824,19.3576471 16.7058824,18.0588235 C16.7058824,16.76 17.76,15.7058824 19.0588235,15.7058824 Z" id="icon"></path></g></g></svg>                        </button>
+                    </label>
+
+                </li>
+            </ul>
+        </div>
+        <nav class="services__navigation">
+            <ul class="services__list">
+                <li class="services__item services__item_active">Ремонтируемые бренды
+                </li>
+                <li class="services__item">Дополнительные услуги
+                </li>
+                <li class="services__item">Ремонтируемые устройства
+                </li>
+                <li class="services__item">Цены на услуги
+                </li>
+                <li class="services__item">Адреса сервисных центров</li>
+                <li class="services__item">Специальные цены
+                </li>
+                <li class="services__item">Отзывы</li>
+            </ul>
+        </nav>
+        <section class="services__about about">
+            <div class="about__text-wrapper">
+                <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя. <br><br> Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                    партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                <button class="about__show-more-btn">Читать далее</button>
+            </div>
+            <img src="./img/img_content.png" alt="address " class="about__img">
+        </section>
+        <article class="repair repair__services repair__services--brand">
+            <h2 class="repair__title">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
+            <div class="swiper repair__cards repair__cards--brand">
+
+                <div class="swiper-wrapper repair__slider repair__slider--brand">
+                    <div class="swiper-slide repair__item repair__item--brand">
+                        <a href="#" class="repair__btn repair__btn--lenovo">
+                            <img src="./img/slider_btn/Lenovo.svg" alt="lenovo ">
+                        </a>
+                    </div>
+                    <div class="swiper-slide repair__item repair__item--brand">
+                        <a href="#" class="repair__btn repair__btn--samsung">
+                            <img src="./img/slider_btn/samsung.svg" alt="samsung ">
+                        </a>
+                    </div>
+                    <div class="swiper-slide repair__item repair__item--brand">
+                        <a href="#" class="repair__btn repair__btn--apple">
+                            <img src="./img/slider_btn/apple.svg" alt="apple ">
+                        </a>
+                    </div>
+                    <div class="swiper-slide repair__item repair__item--brand">
+                        <a href="#" class="repair__btn repair__btn--viewsonic">
+                            <img src="./img/slider_btn/viewsonic.svg" alt="viewsonic ">
+                        </a>
+                    </div>
+                    <div class="swiper-slide repair__item repair__item--brand">
+                        <a href="#" class="repair__btn repair__btn--acer">
+                            <img src="./img/slider_btn/acer.svg" alt="acer ">
+                        </a>
+                    </div>
+                    <div class="swiper-slide repair__item repair__item--brand">
+                        <a href="#" class="repair__btn repair__btn--bosh">
+                            <img src="./img/slider_btn/bosh.svg" alt="bosh ">
+                        </a>
+                    </div>
+                    <div class="swiper-slide repair__item repair__item--brand">
+                        <a href="#" class="repair__btn repair__btn--hp">
+                            <img src="./img/slider_btn/hp.svg" alt="hp ">
+                        </a>
+                    </div>
+                    <div class="swiper-slide repair__item repair__item--brand">
+                        <a href="#" class="repair__btn repair__btn--sony">
+                            <img src="./img/slider_btn/sony.svg" alt="sony ">
+                        </a>
+                    </div>
+                    <div class="swiper-slide repair__item repair__item--brand">
+                        <a href="#" class="repair__btn repair__btn--dell">
+                            <img src="./img/slider_btn/dell.svg" alt="dell ">
+                        </a>
+                    </div>
+                    <div class="swiper-slide repair__item repair__item--brand">
+                        <a href="#" class="repair__btn repair__btn--xiaomi">
+                            <img src="./img/slider_btn/xiaomi.svg" alt="xiaomi ">
+                        </a>
+                    </div>
+                    <div class="swiper-slide repair__item repair__item--brand">
+                        <a href="#" class="repair__btn repair__btn--lg">
+                            <img src="./img/slider_btn/lg.svg" alt="lg ">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination repair__pagination repair__pagination--brand"></div>
+            </div>
+
+            <button class="repair__btn-show-more repair__btn-show-more--brand">Показать
+                все</button>
+
+        </article>
+        <article class="repair repair__services repair__services--type">
+            <h2 class="repair__title">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
+            <div class="swiper repair__cards repair__cards--type">
+
+                <div class="swiper-wrapper repair__slider repair__slider--type">
+                    <div class="swiper-slide repair__item repair__item--type">
+                        <a href="#" class="repair__btn repair__btn--type">
+                            Ремонт ноутбуков
+                        </a>
+                    </div>
+                    <div class="swiper-slide repair__item repair__item--type">
+                        <a href="#" class="repair__btn repair__btn--type">
+                            Ремонт планшетов
+                        </a>
+                    </div>
+                    <div class="swiper-slide repair__item repair__item--type">
+                        <a href="#" class="repair__btn repair__btn--type">
+                            Ремонт ПК
+                        </a>
+                    </div>
+                    <div class="swiper-slide repair__item repair__item--type">
+                        <a href="#" class="repair__btn repair__btn--type">
+                            Ремонт мониторов
+                        </a>
+                    </div>
+                    <div class="swiper-slide repair__item repair__item--type">
+                        <a href="#" class="repair__btn repair__btn--type">
+                            Ремонт моноблоков
+                        </a>
+                    </div>
+                    <div class="swiper-slide repair__item repair__item--type">
+                        <a href="#" class="repair__btn repair__btn--type">
+                            Ремонт телевонов
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination repair__pagination repair__pagination--type"></div>
+            </div>
+
+            <button class="repair__btn-show-more repair__btn-show-more--type">Показать
+                все</button>
+
+        </article>
+        <article class="repair repair__services repair__services--price">
+            <h2 class="repair__title">ЦЕНА НА УСЛУГИ
+            </h2>
+            <div class="swiper repair__cards repair__cards--price">
+
+                <div class="swiper-wrapper repair__slider repair__slider--price prices">
+                    <div class="swiper-slide prices__item prices__item--card">
+                        <h3 class="prices__title prices__service-title">Ремонтные услуги
+                        </h3>
+                        <p class="prices__service">Тестирование с выдачей технического заключения
+                        </p>
+                        <h3 class="prices__title prices__price-title">Цена</h3>
+                        <p class="prices__price">Бесплатно</p>
+                        <h3 class="prices__title prices__time-title">Срок</h3>
+                        <p class="prices__time">30-120 мин
+                        </p>
+                        <button class="btn--oval prices__btn prices__btn--order">
+                            Заказать
+                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="#FFFFFF"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide prices__item prices__item--card">
+                        <h3 class="prices__title prices__service-title">Ремонтные услуги
+                        </h3>
+                        <p class="prices__service">Тестирование с выдачей технического заключения
+                        </p>
+                        <h3 class="prices__title prices__price-title">Цена</h3>
+                        <p class="prices__price">Бесплатно</p>
+                        <h3 class="prices__title prices__time-title">Срок</h3>
+                        <p class="prices__time">30-120 мин
+                        </p>
+                        <button class="btn--oval prices__btn prices__btn--order">
+                            Заказать
+                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="#FFFFFF"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide prices__item prices__item--card">
+                        <h3 class="prices__title prices__service-title">Ремонтные услуги
+                        </h3>
+                        <p class="prices__service">Тестирование с выдачей технического заключения
+                        </p>
+                        <h3 class="prices__title prices__price-title">Цена</h3>
+                        <p class="prices__price">Бесплатно</p>
+                        <h3 class="prices__title prices__time-title">Срок</h3>
+                        <p class="prices__time">30-120 мин
+                        </p>
+                        <button class="btn--oval prices__btn prices__btn--order">
+                            Заказать
+                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="#FFFFFF"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide prices__item prices__item--card">
+                        <h3 class="prices__title prices__service-title">Ремонтные услуги
+                        </h3>
+                        <p class="prices__service">Тестирование с выдачей технического заключения
+                        </p>
+                        <h3 class="prices__title prices__price-title">Цена</h3>
+                        <p class="prices__price">Бесплатно</p>
+                        <h3 class="prices__title prices__time-title">Срок</h3>
+                        <p class="prices__time">30-120 мин
+                        </p>
+                        <button class="btn--oval prices__btn prices__btn--order">
+                            Заказать
+                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="#FFFFFF"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-slide prices__item prices__item--card">
+                        <h3 class="prices__title prices__service-title">Ремонтные услуги
+                        </h3>
+                        <p class="prices__service">Тестирование с выдачей технического заключения
+                        </p>
+                        <h3 class="prices__title prices__price-title">Цена</h3>
+                        <p class="prices__price">Бесплатно</p>
+                        <h3 class="prices__title prices__time-title">Срок</h3>
+                        <p class="prices__time">30-120 мин
+                        </p>
+                        <button class="btn--oval prices__btn prices__btn--order">
+                            Заказать
+                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="#FFFFFF"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination repair__pagination repair__pagination--price"></div>
+            </div>
+            <div class="prices__gloss">
+                <p class="prices__text">
+                    Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
+                </p>
+                <a href="#" class="prices__proposal">Получить коммерческое
+                    предложение</a>
+            </div>
+        </article>
+
+        <article class="prices-table">
+            <h2 class="prices-table__title">ЦЕНЫ НА УСЛУГИ
+            </h2>
+            <table class="prices-table__table">
+                <thead class="prices-table__columns-title">
+                    <td class="prices-table__column-title">Ремонтные услуги</td>
+                    <td class="prices-table__column-title">Цена</td>
+                    <td class="prices-table__column-title">Срок</td>
+                    <td class="prices-table__column-title"></td>
+                </thead>
+
+                <tr class="prices-table__row">
+                    <td class="prices-table__service">Диагностика</td>
+                    <td class="prices-table__price">Бесплатно</td>
+                    <td class="prices-table__time">30 мин
+                    </td>
+                    <td class="prices-table__action">
+                        <button class="btn--oval price-table__btn">
+                            Заказать
+                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="#FFFFFF"/>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="prices-table__row">
+                    <td class="prices-table__service">Замена дисплея</td>
+                    <td class="prices-table__price">1 000 ₽</td>
+                    <td class="prices-table__time">30-120 мин
+                    </td>
+                    <td class="prices-table__action">
+                        <button class="btn--oval price-table__btn">
+                            Заказать
+                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="#FFFFFF"/>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="prices-table__row">
+                    <td class="prices-table__service">Замена полифонического динамика
+                    </td>
+                    <td class="prices-table__price">1 000 ₽</td>
+                    <td class="prices-table__time">30-120 мин
+                    </td>
+                    <td class="prices-table__action">
+                        <button class="btn--oval price-table__btn">
+                            Заказать
+                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="#FFFFFF"/>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="prices-table__row">
+                    <td class="prices-table__service">Тестирование с выдачей технического заключения</td>
+                    <td class="prices-table__price">1 000 ₽</td>
+                    <td class="prices-table__time">30-120 мин
+                    </td>
+                    <td class="prices-table__action">
+                        <button class="btn--oval price-table__btn">
+                            Заказать
+                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="#FFFFFF"/>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="prices-table__row">
+                    <td class="prices-table__service">Замена программного обеспечения
+                    </td>
+                    <td class="prices-table__price">1 000 ₽</td>
+                    <td class="prices-table__time">30-120 мин
+                    </td>
+                    <td class="prices-table__action">
+                        <button class="btn--oval price-table__btn">
+                            Заказать
+                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="#FFFFFF"/>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            <div class="prices-table__gloss">
+                <p class="prices-table__text">
+                    Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
+                </p>
+                <a href="#" class="prices-table__proposal">Получить
+                    коммерческое предложение</a>
+            </div>
+        </article>
+
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__copyright">
+                <p class="footer__copyright-date">© 2019 CPS</p>
+                <p class="footer__developer">Разработано командой Apesong</p>
+            </div>
+            <a href="#" class="footer__privacy">Политика
+                конфиденциальности</a>
+            <div class="footer__no-offer">
+                Информация, размещенная на данной странице, не является публичной офертой
+            </div>
+        </div>
+    </footer>
+    
+    
+    <aside class="burger">
+        <div class="burger__overflow"></div>
+        <div class="burger__wrapper">
+            <div class="burger__header">
+                <button class="burger__btn btn--round burger__btn--close">
+                    <svg width="18 " height="18 " viewBox="0 0 18 18 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                        <path fill-rule="evenodd " clip-rule="evenodd " d="M2.79348 1.25712C2.40295 0.866593 1.76979
+                                0.866592 1.37927 1.25712L1.25712
+                                1.37927C0.866592 1.76979 0.866593 2.40296
+                                1.25712 2.79348L7.46364 9L1.25712
+                                15.2065C0.866593 15.597
+                                0.866592 16.2302 1.25712 16.6207L1.37927
+                                16.7429C1.76979 17.1334 2.40295 17.1334 2.79348
+                                16.7429L9 10.5364L15.2065 16.7429C15.597 17.1334
+                                16.2302 17.1334 16.6207 16.7429L16.7429
+                                16.6207C17.1334 16.2302 17.1334 15.597 16.7429
+                                15.2065L10.5364 9L16.7429
+                                2.79348C17.1334 2.40296 17.1334 1.76979 16.7429
+                                1.37927L16.6207 1.25712C16.2302 0.866592 15.597
+                                0.866593 15.2065 1.25712L9 7.46364L2.79348
+                                1.25712Z " fill="var(--color) "/>
+                    </svg>
+                </button>
+                <a class="burger__logo" href="/index.html"></a>
+                <button class="burger__btn btn--round burger__btn--search">
+                    <svg width="18 " height="18 " viewBox="0 0 18 18 " fill="none " xmlns="http://www.w3.org/2000/svg
+                                ">
+                        <path fill-rule="evenodd " clip-rule="evenodd " d="M12.5006 11.0006H11.7106L11.4306
+                                    10.7306C12.6306 9.33063 13.2506 7.42063
+                                    12.9106 5.39063C12.4406 2.61063 10.1206
+                                    0.390626 7.32063 0.0506256C3.09063 -0.469374
+                                    -0.469374 3.09063
+                                    0.0506256 7.32063C0.390626 10.1206 2.61063
+                                    12.4406 5.39063 12.9106C7.42063 13.2506
+                                    9.33063 12.6306 10.7306 11.4306L11.0006
+                                    11.7106V12.5006L15.2606 16.7506C15.6706
+                                    17.1606 16.3306 17.1606 16.7406
+                                    16.7506L16.7506 16.7406C17.1606 16.3306
+                                    17.1606
+                                    15.6706 16.7506 15.2606L12.5006
+                                    11.0006ZM6.50063 11.0006C4.01063 11.0006
+                                    2.00063 8.99063 2.00063 6.50063C2.00063
+                                    4.01063 4.01063 2.00063 6.50063
+                                    2.00063C8.99063 2.00063 11.0006 4.01063
+                                    11.0006 6.50063C11.0006 8.99063 8.99063
+                                    11.0006 6.50063 11.0006Z
+                                    " fill="var(--color) "/>
+                    </svg>
+                </button>
+            </div>
+            <div class="burger__main">
+                <nav class="services_navigation burger__navigation">
+                    <ul class="burger__services aside-services">
+                        <li class="aside-services__item-wrapper">
+                            <a href="#" class="aside-services__item aside-services__item--active">Ремонт
+                                техники</a>
+                        </li>
+                        <li class="aside-services__item-wrapper">
+                            <a href="#" class="aside-services__item">Услуги
+                                и сервисы</a>
+                        </li>
+                        <li class="aside-services__item-wrapper">
+                            <a href="#" class="aside-services__item">Корпоративным
+                                клиентам</a>
+                        </li>
+                        <li class="aside-services__item-wrapper">
+                            <a href="#" class="aside-services__item">Продавцам
+                                техники</a>
+                        </li>
+                        <li class="aside-services__item-wrapper">
+                            <a href="#" class="aside-services__item">Партнерам</a>
+                        </li>
+                        <li class="aside-services__item-wrapper">
+                            <a href="#" class="aside-services__item">Производителям</a>
+                        </li>
+                        <li class="aside-services__item-wrapper">
+                            <a href="#" class="aside-services__item">Наши
+                                сервисные центры</a>
+                        </li>
+                        <li class="aside-services__item-wrapper">
+                            <a href="#" class="aside-services__item">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="burger__footer">
+                <div class="burger__contact-us contact-us">
+                    <button class="contact-us__btn btn--round footer__btn--call btn__callback">
+                        <svg width="18 " height="18 " viewBox="0 0
+                                        18 18 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                            <path fill-rule="evenodd " clip-rule="evenodd " d="M1.76019
+                                            12.25L4.30019 11.96C4.91019 11.89
+                                            5.51019 12.1 5.94019 12.53L7.78019
+                                            14.37C10.6102 12.93 12.9302 10.62
+                                            14.3702 7.78L12.5202 5.93C12.0902
+                                            5.5 11.8802 4.9 11.9502
+                                            4.29L12.2402 1.77C12.3602 0.76
+                                            13.2102 0 14.2302 0H15.9602C17.0902
+                                            0 18.0302 0.94 17.9602 2.07C17.4302
+                                            10.61 10.6002 17.43 2.07019
+                                            17.96C0.940193 18.03 0.00019455
+                                            17.09 0.00019455
+                                            15.96V14.23C-0.00980568 13.22
+                                            0.750193 12.37 1.76019 12.25Z
+                                            " fill="var(--color) "/>
+                        </svg>
+                    </button>
+                    <button class="contact-us__btn btn--round footer__btn--msg btn__msg">
+                        <svg width="20 " height="20 " viewBox="0
+                                            0 20 20 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                            <path fill-rule="evenodd " clip-rule="evenodd " d="M18
+                                                0H2C0.9 0 0.01 0.9 0.01 2L0 20L4
+                                                15H18C19.1 15 20 14.1 20 13V2C20
+                                                0.9 19.1 0 18 0ZM11 11H5C4.45 11
+                                                4 10.55 4 10C4 9.45 4.45 9 5
+                                                9H11C11.55 9 12 9.45 12 10C12
+                                                10.55
+                                                11.55 11 11 11ZM15 6H5C4.45 6 4
+                                                5.55 4 5C4 4.45 4.45 4 5
+                                                4H15C15.55 4 16 4.45 16 5C16
+                                                5.55 15.55 6 15 6Z " fill="var(--color) "/>
+                        </svg>
+                    </button>
+                    <button class="contact-us__btn btn--round footer__btn--profile">
+                        <svg width="20 " height="19 " viewBox="0 0 20 19 " fill="none
+                                                " xmlns="http://www.w3.org/2000/svg
+                                                ">
+                            <path d="M10.5 9C12.9853 9 15
+                                                    6.98528 15 4.5C15 2.01472
+                                                    12.9853 0 10.5 0C8.01472 0 6
+                                                    2.01472 6 4.5C6 6.98528
+                                                    8.01472 9 10.5 9Z " fill="var(--color) "/>
+                            <path d="M0.0165859
+                                                        16.6118C-0.113065
+                                                        17.3412 0.535191 18
+                                                        1.33903
+                                                        18H18.6604C19.4902 18
+                                                        20.1125 17.3412 19.9829
+                                                        16.6118C19.2309 12.4
+                                                        15.0561 10 9.99973
+                                                        10C4.94333 10 0.768563
+                                                        12.4 0.0165859 16.6118Z
+                                                        " fill="var(--color) "/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="burger__contacts contacts">
+                    <a href="mailto:mail@cps.com" class="contacts__email">
+                        mail@cps.com
+                    </a>
+                    <a href="tel:88008908900" class="contacts__phone">
+                        8 800 890 8900
+                    </a>
+                </div>
+                <div class="burger__language language">
+                    <div class="language__items">
+                        <input class="language__checkbox" type="radio" id="language-ru " name="language" value="ru" checked="checked">
+                        <label class="language__item language__item--ru" for="language-ru ">RU</label>
+                        <input class="language__checkbox" type="radio" id="language-en " name="language" value="en">
+                        <label class="language__item language__item--en" for="language-en ">EN</label>
+                        <input class="language__checkbox" type="radio" id="language-ch " name="language" value="ch">
+                        <label class="language__item language__item--ch" for="language-ch ">CH</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <aside class="sidebar sidebar__callback">
+        <div class="sidebar__overflow sidebar__overflow--callback"></div>
+        <div class="sidebar__wrapper">
+            <header class="sidebar__header">
+                <button class="btn--round sidebar__btn sidebar__btn--close sidebar__btn--close-callback">
+                    <svg width="18 " height="18 " viewBox="0 0 18 18 " fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd " clip-rule="evenodd " d="M2.79348 1.25712C2.40295
+                                                        0.866593 1.76979 0.866592
+                                                        1.37927 1.25712L1.25712
+                                                        1.37927C0.866592 1.76979
+                                                        0.866593 2.40296 1.25712
+                                                        2.79348L7.46364 9L1.25712
+                                                        15.2065C0.866593 15.597
+                                                        0.866592 16.2302 1.25712
+                                                        16.6207L1.37927
+                                                        16.7429C1.76979 17.1334
+                                                        2.40295 17.1334 2.79348
+                                                        16.7429L9 10.5364L15.2065
+                                                        16.7429C15.597 17.1334
+                                                        16.2302 17.1334 16.6207
+                                                        16.7429L16.7429
+                                                        16.6207C17.1334 16.2302
+                                                        17.1334 15.597 16.7429
+                                                        15.2065L10.5364 9L16.7429
+                                                        2.79348C17.1334 2.40296
+                                                        17.1334 1.76979 16.7429
+                                                        1.37927L16.6207
+                                                        1.25712C16.2302 0.866592
+                                                        15.597 0.866593 15.2065
+                                                        1.25712L9 7.46364L2.79348
+                                                        1.25712Z " fill="var(--color) "/>
+                    </svg>
+                </button>
+            </header>
+
+            <form action="" method="post" class="sidebar__form sidebar__form--callback form">
+                <h2 class="form__title">Заказать звонок
+                </h2>
+                <input type="number" name="phone-number" class="form__input form__input--phone" placeholder="Телефон">
+
+                <p class="form__agreement">Нажимая “отправить”, вы даете согласие на
+                    <a href="#" class="form__personal-data-processing">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="form__privacy-policy">политикой конфиденциальности
+                </a></p>
+                <button type="submit" class="form__btn form__btn--send form__btn--send-callback">ОТПРАВИТЬ</button>
+            </form>
+    
+        </div>
+ 
+    </aside>
+    <aside class="sidebar sidebar__feedback">
+        <div class="sidebar__overflow sidebar__overflow--feedback"></div>
+        <div class="sidebar__wrapper">
+            <header class="sidebar__header">
+                <button class="btn--round sidebar__btn sidebar__btn--close sidebar__btn--close-feedback">
+                    <svg width="18 " height="18 " viewBox="0 0 18 18 " fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd " clip-rule="evenodd " d="M2.79348 1.25712C2.40295
+                                                        0.866593 1.76979 0.866592
+                                                        1.37927 1.25712L1.25712
+                                                        1.37927C0.866592 1.76979
+                                                        0.866593 2.40296 1.25712
+                                                        2.79348L7.46364 9L1.25712
+                                                        15.2065C0.866593 15.597
+                                                        0.866592 16.2302 1.25712
+                                                        16.6207L1.37927
+                                                        16.7429C1.76979 17.1334
+                                                        2.40295 17.1334 2.79348
+                                                        16.7429L9 10.5364L15.2065
+                                                        16.7429C15.597 17.1334
+                                                        16.2302 17.1334 16.6207
+                                                        16.7429L16.7429
+                                                        16.6207C17.1334 16.2302
+                                                        17.1334 15.597 16.7429
+                                                        15.2065L10.5364 9L16.7429
+                                                        2.79348C17.1334 2.40296
+                                                        17.1334 1.76979 16.7429
+                                                        1.37927L16.6207
+                                                        1.25712C16.2302 0.866592
+                                                        15.597 0.866593 15.2065
+                                                        1.25712L9 7.46364L2.79348
+                                                        1.25712Z " fill="var(--color) "/>
+                    </svg>
+                </button>
+            </header>
+
+            <form action="" method="get" class="sidebar__form sidebar__form--feedback form">
+                <h2 class="form__title">Обратная связь
+                </h2>
+                <input type="text" name="name" class="form__input form__input--name" placeholder="Имя">
+                <input type="number" name="phone-number" class="form__input form__input--phone" placeholder="Телефон">
+                <input type="email" name="email" class="form__input form__input--email" placeholder="Электронная почта">
+                <input type="text" name="message" class="form__input form__input--message" placeholder="Сообщение">
+
+                <p class="form__agreement">Нажимая “отправить”, вы даете согласие на
+                    <a href="#" class="form__personal-data-processing">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="form__privacy-policy">политикой конфиденциальности
+                </a></p>
+                <button type="submit" class="form__btn form__btn--send form__btn--send-feedback">ОТПРАВИТЬ</button>
+            </form>
+    
+        </div>
+ 
+    </aside>
+<script type="text/javascript" src="./js/bundle.js"></script></body>
+
 </html>

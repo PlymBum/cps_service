@@ -72,7 +72,8 @@ $color-background: #F8F8F8;
             border: 2px solid $color-btn;
             right: 14px;
             bottom: 15px;
-            background: url(../assets/img/slider_btn/dropdown.svg) no-repeat 15px 50%;
+            background: url(/src/img/slider_btn/dropdown.svg) no-repeat 15px 50%;
+            // background: url(../assets/img/slider_btn/dropdown.svg) no-repeat 15px 50%;
             transition-duration: 500ms;
         }
         &:hover::after {
@@ -142,7 +143,8 @@ $color-background: #F8F8F8;
         &__btn-show-more::before {
             position: absolute;
             content: "";
-            background-image: url(../assets/img/expand.svg);
+            background-image: url(/src/img/expand.svg);
+            // background-image: url(../assets/img/expand.svg);
             width: 24px;
             height: 24px;
             left: -24px;
