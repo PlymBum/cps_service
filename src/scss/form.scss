@@ -77,6 +77,12 @@
         width: 288px;
         height: 48px;
         padding: 12px 16px;
+        &:focus {
+            outline: 3px solid $color-btn
+        }
+        &:active {
+            // border-color: $color-btn;
+        }
     }
     &__agreement {
         font-size: 14px;
@@ -93,16 +99,16 @@
             margin-top: 18px;
             text-transform: uppercase;
             letter-spacing: -0.15px;
-            border: none;
-            color: $color-bacground-white;
+            // border: none;
+            // color: $color-bacground-white;
             width: 119px;
             height: 32px;
-            border-radius: 16px;
-            background-color: $color-btn;
-            -webkit-border-radius: 16px;
-            -moz-border-radius: 16px;
-            -ms-border-radius: 16px;
-            -o-border-radius: 16px;
+            // border-radius: 16px;
+            // background-color: $color-btn;
+            // -webkit-border-radius: 16px;
+            // -moz-border-radius: 16px;
+            // -ms-border-radius: 16px;
+            // -o-border-radius: 16px;
         }
     }
 }

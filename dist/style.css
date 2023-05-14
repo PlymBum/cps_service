@@ -1184,6 +1184,7 @@ swiper-container .swiper-notification {
     display: none; } }
 
 .btn--round {
+  cursor: pointer;
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -1197,6 +1198,7 @@ swiper-container .swiper-notification {
     fill: #FF3E79; }
 
 .btn--oval {
+  cursor: pointer;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -1212,7 +1214,6 @@ swiper-container .swiper-notification {
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
-  text-align: start;
   padding: 4px 12px;
   align-items: center;
   transition: all 300ms;
@@ -1254,6 +1255,8 @@ swiper-container .swiper-notification {
     justify-content: space-between;
     width: 173px;
     margin-right: 30px; }
+    .services__btn-wraper:hover {
+      color: #FF3E79; }
   .services__list {
     margin-top: 32px;
     display: flex;
@@ -1266,20 +1269,21 @@ swiper-container .swiper-notification {
     .services__list::-webkit-scrollbar {
       display: none; }
   .services__item {
+    cursor: pointer;
     display: inline-block;
     font-size: 16px;
     color: #7E7E82;
     box-sizing: border-box;
     height: 40px;
     padding: 8px 16px; }
-  .services__item_active {
-    background: #FFFFFF;
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px; }
+    .services__item--active {
+      background: #FFFFFF;
+      border: 2px solid #B8FFEC;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px; }
 
 @media (min-width: 768px) {
   .services__list {
@@ -1288,10 +1292,9 @@ swiper-container .swiper-notification {
 @media (min-width: 1120px) {
   .main__services {
     margin-left: 320px;
-    padding-top: 24px; }
+    padding-top: 0; }
   .services {
-    margin-top: 0;
-    padding-top: 42px; }
+    margin-top: 0; }
     .services__actions {
       display: flex;
       margin-left: auto; }
@@ -1316,23 +1319,56 @@ swiper-container .swiper-notification {
     font-size: 14px;
     text-align: left;
     margin-bottom: 16px;
-    margin-top: 24px; }
+    margin-top: 24px;
+    height: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .about__text--open {
+      height: auto; }
   .about__show-more-btn {
+    cursor: pointer;
     display: inline-block;
+    position: relative;
     background-color: inherit;
     border: none;
-    background-image: url(./static/expand.svg);
-    background-repeat: no-repeat;
     margin-bottom: 16px;
     height: 24px;
     font-size: 16px;
     color: #1B1C21;
     padding-left: 32px;
     margin-left: 20px;
-    align-self: flex-start; }
+    align-self: flex-start;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms; }
+    .about__show-more-btn::before {
+      content: "";
+      position: absolute;
+      background-image: url(./static/expand.svg);
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 24px;
+      transform-origin: center;
+      transform: translate(-36px, 0px);
+      -webkit-transform: translate(-36px, 0px);
+      -moz-transform: translate(-36px, 0px);
+      -ms-transform: translate(-36px, 0px);
+      -o-transform: translate(-36px, 0px); }
+    .about__show-more-btn--open::before {
+      transform: translate(-36px) rotate(180deg);
+      -webkit-transform: translate(-36px) rotate(180deg);
+      -moz-transform: translate(-36px) rotate(180deg);
+      -ms-transform: translate(-36px) rotate(180deg);
+      -o-transform: translate(-36px) rotate(180deg); }
+    .about__show-more-btn:hover {
+      color: #FF3E79; }
   .about__img {
     width: 320px;
-    height: auto; }
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content; }
 
 @media (min-width: 768px) {
   .services__about {
@@ -1341,14 +1377,18 @@ swiper-container .swiper-notification {
     flex-direction: row; }
     .about__img {
       width: 360px;
-      height: auto; } }
+      height: -webkit-min-content;
+      height: -moz-min-content;
+      height: min-content; } }
 
 @media (min-width: 1120px) {
   .services__about {
     margin-top: 20px; }
   .about__img {
     width: 532px;
-    height: auto; } }
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content; } }
 
 .repair__services {
   margin-bottom: 32px; }
@@ -1433,9 +1473,12 @@ swiper-container .swiper-notification {
     margin-right: 24px;
     height: 160px;
     overflow: hidden; }
+    .repair__slider--show-all {
+      height: auto; }
   .repair__btn {
     background-position: 168px 50%; }
   .repair__btn-show-more {
+    cursor: pointer;
     position: relative;
     display: block;
     margin-left: 40px;
@@ -1444,6 +1487,8 @@ swiper-container .swiper-notification {
     background: none;
     font-size: 16px;
     padding: none; }
+    .repair__btn-show-more:hover {
+      color: #FF3E79; }
   .repair__btn-show-more::before {
     position: absolute;
     content: "";
@@ -1462,8 +1507,6 @@ swiper-container .swiper-notification {
     background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%); }
   .repair__cards {
     margin-left: 32px; }
-  .repair__slider--show-all {
-    height: auto; }
   .repair__btn {
     background-position: 184px 50%; } }
 
@@ -1576,6 +1619,7 @@ swiper-container .swiper-notification {
   .prices__text {
     color: #1B1C21; }
   .prices__proposal {
+    cursor: pointer;
     margin-top: 24px;
     display: inline-block;
     position: relative;
@@ -1583,6 +1627,8 @@ swiper-container .swiper-notification {
     color: #1B1C21;
     font-weight: 600;
     letter-spacing: -0.2px; }
+    .prices__proposal:hover {
+      color: #FF3E79; }
   .prices__proposal::after {
     content: "";
     position: absolute;
@@ -1686,7 +1732,7 @@ swiper-container .swiper-notification {
   margin-left: auto; }
 
 .burger__footer {
-  margin-top: auto; }
+  margin-top: 32px; }
 
 .burger__contact-us {
   display: flex;
@@ -1698,6 +1744,9 @@ swiper-container .swiper-notification {
   color: #1B1C21;
   font-weight: bold;
   margin-bottom: 40px; }
+
+.burger__main {
+  margin-bottom: 32px; }
 
 .contact-us__btn:not(.contact-us__btn:first-child) {
   margin-left: 16px; }
@@ -1808,7 +1857,6 @@ swiper-container .swiper-notification {
     float: left;
     width: 320px; }
     .burger__wrapper {
-      padding-top: 30px;
       position: fixed;
       width: 320px;
       top: 0;
@@ -1818,7 +1866,9 @@ swiper-container .swiper-notification {
       -ms-transform: translate(0);
       -o-transform: translate(0); }
     .burger__btn--close {
-      display: none; } }
+      display: none; }
+    .burger__footer {
+      margin-top: auto; } }
 
 .prices-table {
   display: none; }
@@ -1885,6 +1935,7 @@ swiper-container .swiper-notification {
     .prices-table__text {
       color: #1B1C21; }
     .prices-table__proposal {
+      cursor: pointer;
       margin-top: 24px;
       display: inline-block;
       position: relative;
@@ -1892,6 +1943,8 @@ swiper-container .swiper-notification {
       color: #1B1C21;
       font-weight: 600;
       letter-spacing: -0.2px; }
+      .prices-table__proposal:hover {
+        color: #FF3E79; }
     .prices-table__proposal::after {
       content: "";
       position: absolute;
@@ -1973,6 +2026,8 @@ swiper-container .swiper-notification {
     width: 288px;
     height: 48px;
     padding: 12px 16px; }
+    .form__input:focus {
+      outline: 3px solid #FF3E79; }
   .form__agreement {
     font-size: 14px;
     line-height: 16px;
@@ -1984,16 +2039,8 @@ swiper-container .swiper-notification {
     margin-top: 18px;
     text-transform: uppercase;
     letter-spacing: -0.15px;
-    border: none;
-    color: #FFFFFF;
     width: 119px;
-    height: 32px;
-    border-radius: 16px;
-    background-color: #FF3E79;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px; }
+    height: 32px; }
 
 @media (min-width: 768px) {
   .sidebar__wrapper {
