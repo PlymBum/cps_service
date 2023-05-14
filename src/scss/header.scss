@@ -1,3 +1,4 @@
+@import './utils/env.scss';
 .header {
     position: fixed;
     top: 0px;
@@ -5,38 +6,18 @@
     width: 100vw;
     z-index: 2;
     display: flex;
-    background-color: #ffffff;
-    // margin-bottom: 88px;
+    background-color: $color-bacground-white;
     justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
     height: 88px;
-    // width: 100vw;
     padding: 18px 16px;
-    // padding-left: 16px;
-    // padding-top: 18px;
-    // border-bottom: 1px solid black;
-    // margin-bottom: 18px;
-    // &__burger {
-    //     height: 40px;
-    // }
     &__button {
-        // border: none;
-        // background-color: inherit;
-        // padding: 0;
         margin-right: 16px;
-        // width: 40px;
-        // height: 40px;
-        // vertical-align: top;
-        // transition: transform 1s;
         &--checkstatus {
             margin-right: 0;
         }
     }
-    // &__button:hover {
-    //     transform: rotate(1turn);
-    // }
-    &__logo {}
     &__actions {
         padding: 0;
         display: flex;
@@ -53,7 +34,7 @@
         box-sizing: border-box;
         line-height: 0;
         margin-right: 14px;
-        background-color: #EAEAEA;
+        background-color: $color-card-border;
         height: 32px;
         width: 2px;
         border-radius: 1px;
@@ -76,7 +57,7 @@
             margin-right: 20px;
             vertical-align: bottom;
             margin-bottom: 4px;
-            background-color: #EAEAEA;
+            background-color: $color-card-border;
         }
     }
 }

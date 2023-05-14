@@ -1,0 +1,431 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-Italic.eot');
+    src: local('TT Lakes Italic'), local('TTLakes-Italic'), url('/src/assets/fonts/TTLakes/TTLakes-Italic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-Italic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-ExtraLight.eot');
+    src: local('TT Lakes Condensed ExtraLight'), local('TTLakesCondensed-ExtraLight'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-ExtraLight.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-ExtraLight.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-Regular.eot');
+    src: local('TT Lakes Compressed Regular'), local('TTLakesCompressed-Regular'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Regular.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Regular.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-ThinItalic.eot');
+    src: local('TT Lakes Compressed Thin Italic'), local('TTLakesCompressed-ThinItalic'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-ThinItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-ThinItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-Medium.eot');
+    src: local('TT Lakes Condensed Medium'), local('TTLakesCondensed-Medium'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Medium.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Medium.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-ExtraBoldItalic.eot');
+    src: local('TT Lakes Compressed ExtraBold Italic'), local('TTLakesCompressed-ExtraBoldItalic'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-ExtraBoldItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-ExtraLightItalic.eot');
+    src: local('TT Lakes ExtraLight Italic'), local('TTLakes-ExtraLightItalic'), url('/src/assets/fonts/TTLakes/TTLakes-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-ExtraLightItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-LightItalic.eot');
+    src: local('TT Lakes Light Italic'), local('TTLakes-LightItalic'), url('/src/assets/fonts/TTLakes/TTLakes-LightItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-LightItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-Thin.eot');
+    src: local('TT Lakes Thin'), local('TTLakes-Thin'), url('/src/assets/fonts/TTLakes/TTLakes-Thin.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-Thin.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-DemiBoldItalic.eot');
+    src: local('TT Lakes DemiBold Italic'), local('TTLakes-DemiBoldItalic'), url('/src/assets/fonts/TTLakes/TTLakes-DemiBoldItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-DemiBoldItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-DemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-Black.eot');
+    src: local('TT Lakes Condensed Black'), local('TTLakesCondensed-Black'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Black.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Black.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-LightItalic.eot');
+    src: local('TT Lakes Condensed Light Italic'), local('TTLakesCondensed-LightItalic'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-LightItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-LightItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-DemiBold.eot');
+    src: local('TT Lakes Condensed DemiBold'), local('TTLakesCondensed-DemiBold'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-DemiBold.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-DemiBold.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-ExtraBold.eot');
+    src: local('TT Lakes Compressed ExtraBold'), local('TTLakesCompressed-ExtraBold'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-ExtraBold.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-ExtraBold.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-ExtraBoldItalic.eot');
+    src: local('TT Lakes ExtraBold Italic'), local('TTLakes-ExtraBoldItalic'), url('/src/assets/fonts/TTLakes/TTLakes-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-ExtraBoldItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-ExtraLight.eot');
+    src: local('TT Lakes ExtraLight'), local('TTLakes-ExtraLight'), url('/src/assets/fonts/TTLakes/TTLakes-ExtraLight.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-ExtraLight.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-Bold.eot');
+    src: local('TT Lakes Condensed Bold'), local('TTLakesCondensed-Bold'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Bold.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Bold.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-ThinItalic.eot');
+    src: local('TT Lakes Condensed Thin Italic'), local('TTLakesCondensed-ThinItalic'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-ThinItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-ThinItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-ExtraBoldItalic.eot');
+    src: local('TT Lakes Condensed ExtraBold Italic'), local('TTLakesCondensed-ExtraBoldItalic'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-ExtraBoldItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-Medium.eot');
+    src: local('TT Lakes Compressed Medium'), local('TTLakesCompressed-Medium'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Medium.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Medium.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-Thin.eot');
+    src: local('TT Lakes Condensed Thin'), local('TTLakesCondensed-Thin'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Thin.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Thin.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-Italic.eot');
+    src: local('TT Lakes Compressed Italic'), local('TTLakesCompressed-Italic'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Italic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Italic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-Light.eot');
+    src: local('TT Lakes Compressed Light'), local('TTLakesCompressed-Light'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Light.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Light.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-LightItalic.eot');
+    src: local('TT Lakes Compressed Light Italic'), local('TTLakesCompressed-LightItalic'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-LightItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-LightItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-Regular.eot');
+    src: local('TT Lakes Condensed Regular'), local('TTLakesCondensed-Regular'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Regular.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Regular.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-Light.eot');
+    src: local('TT Lakes Condensed Light'), local('TTLakesCondensed-Light'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Light.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Light.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'), url('/src/assets/fonts/TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-Bold.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-DemiBold.eot');
+    src: local('TT Lakes DemiBold'), local('TTLakes-DemiBold'), url('/src/assets/fonts/TTLakes/TTLakes-DemiBold.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-DemiBold.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-Thin.eot');
+    src: local('TT Lakes Compressed Thin'), local('TTLakesCompressed-Thin'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Thin.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Thin.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-Black.eot');
+    src: local('TT Lakes Black'), local('TTLakes-Black'), url('/src/assets/fonts/TTLakes/TTLakes-Black.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-Black.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-MediumItalic.eot');
+    src: local('TT Lakes Medium Italic'), local('TTLakes-MediumItalic'), url('/src/assets/fonts/TTLakes/TTLakes-MediumItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-MediumItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-ExtraBold.eot');
+    src: local('TT Lakes Condensed ExtraBold'), local('TTLakesCondensed-ExtraBold'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-ExtraBold.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-ExtraBold.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-ExtraLightItalic.eot');
+    src: local('TT Lakes Condensed ExtraLight Italic'), local('TTLakesCondensed-ExtraLightItalic'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-ExtraLightItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'), url('/src/assets/fonts/TTLakes/TTLakes-Medium.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-Medium.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-DemiBoldItalic.eot');
+    src: local('TT Lakes Condensed DemiBold Italic'), local('TTLakesCondensed-DemiBoldItalic'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-DemiBoldItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-DemiBoldItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-DemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-BoldItalic.eot');
+    src: local('TT Lakes Compressed Bold Italic'), local('TTLakesCompressed-BoldItalic'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-BoldItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-BoldItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-ExtraLightItalic.eot');
+    src: local('TT Lakes Compressed ExtraLight Italic'), local('TTLakesCompressed-ExtraLightItalic'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-ExtraLightItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'), url('/src/assets/fonts/TTLakes/TTLakes-Regular.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-Regular.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-BoldItalic.eot');
+    src: local('TT Lakes Bold Italic'), local('TTLakes-BoldItalic'), url('/src/assets/fonts/TTLakes/TTLakes-BoldItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-BoldItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-MediumItalic.eot');
+    src: local('TT Lakes Condensed Medium Italic'), local('TTLakesCondensed-MediumItalic'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-MediumItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-MediumItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-Italic.eot');
+    src: local('TT Lakes Condensed Italic'), local('TTLakesCondensed-Italic'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Italic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Italic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-ThinItalic.eot');
+    src: local('TT Lakes Thin Italic'), local('TTLakes-ThinItalic'), url('/src/assets/fonts/TTLakes/TTLakes-ThinItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-ThinItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-DemiBold.eot');
+    src: local('TT Lakes Compressed DemiBold'), local('TTLakesCompressed-DemiBold'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-DemiBold.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-DemiBold.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-BlackItalic.eot');
+    src: local('TT Lakes Black Italic'), local('TTLakes-BlackItalic'), url('/src/assets/fonts/TTLakes/TTLakes-BlackItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-BlackItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-Bold.eot');
+    src: local('TT Lakes Compressed Bold'), local('TTLakesCompressed-Bold'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Bold.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Bold.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-BlackItalic.eot');
+    src: local('TT Lakes Condensed Black Italic'), local('TTLakesCondensed-BlackItalic'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-BlackItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-BlackItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-MediumItalic.eot');
+    src: local('TT Lakes Compressed Medium Italic'), local('TTLakesCompressed-MediumItalic'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-MediumItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-MediumItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCondensed-BoldItalic.eot');
+    src: local('TT Lakes Condensed Bold Italic'), local('TTLakesCondensed-BoldItalic'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-BoldItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-BoldItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCondensed-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-ExtraLight.eot');
+    src: local('TT Lakes Compressed ExtraLight'), local('TTLakesCompressed-ExtraLight'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-ExtraLight.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-ExtraLight.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-ExtraBold.eot');
+    src: local('TT Lakes ExtraBold'), local('TTLakes-ExtraBold'), url('/src/assets/fonts/TTLakes/TTLakes-ExtraBold.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-ExtraBold.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-DemiBoldItalic.eot');
+    src: local('TT Lakes Compressed DemiBold Italic'), local('TTLakesCompressed-DemiBoldItalic'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-DemiBoldItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-DemiBoldItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-DemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-BlackItalic.eot');
+    src: local('TT Lakes Compressed Black Italic'), local('TTLakesCompressed-BlackItalic'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-BlackItalic.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-BlackItalic.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/assets/fonts/TTLakes/TTLakes-Light.eot');
+    src: local('TT Lakes Light'), local('TTLakes-Light'), url('/src/assets/fonts/TTLakes/TTLakes-Light.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakes-Light.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakes-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('/src/assets/fonts/TTLakes/TTLakesCompressed-Black.eot');
+    src: local('TT Lakes Compressed Black'), local('TTLakesCompressed-Black'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Black.eot?#iefix') format('embedded-opentype'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Black.woff') format('woff'), url('/src/assets/fonts/TTLakes/TTLakesCompressed-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

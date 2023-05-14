@@ -15,7 +15,7 @@
         width: 240px;
         height: 160px;
         font-size: 16px;
-        color: #1b1c21;
+        color: $color-text;
     }
 }
 
@@ -32,9 +32,6 @@
 }
 
 @media (min-width:1120px) {
-    // body {
-    //     min-width: 1120px;
-    // }
     .repair {
         &__item {
             width: 240px;

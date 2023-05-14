@@ -1,3 +1,4 @@
+// @import './utils/env.scss';
 .services {
     &__about {
         margin-top: 24px;
@@ -13,7 +14,6 @@
         margin: 0;
         margin-left: 16px;
         margin-right: 16px;
-        // font-family: TT Lakes;
         font-size: 14px;
         text-align: left;
         margin-bottom: 16px;
@@ -23,14 +23,12 @@
         display: inline-block;
         background-color: inherit;
         border: none;
-        // background-image: url(../assets/img/expand.svg);
-        background-image: url(/src/img/expand.svg);
+        background-image: url(../img/expand.svg);
         background-repeat: no-repeat;
         margin-bottom: 16px;
         height: 24px;
-        // font-family: 'TT Lakes';
         font-size: 16px;
-        color: #1B1C21;
+        color: $color-text;
         padding-left: 32px;
         margin-left: 20px;
         align-self: flex-start;
@@ -57,12 +55,6 @@
 }
 
 @media (min-width: 1120px) {
-    // .main-wrapper {
-    //     display: flex;
-    // }
-    // .main__services {
-    //     padding-top: 24px;
-    // }
     .services {
         &__about {
             margin-top: 20px;

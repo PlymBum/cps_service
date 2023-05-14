@@ -5,9 +5,6 @@
 @media (min-width:768px) {
     .prices-table {
         display: block;
-        // font-family: 'TT Lakes';
-        // padding: 32px;
-        // margin-left: 32px;
         text-align: start;
         &__title {
             padding-left: 32px;
@@ -15,31 +12,29 @@
             height: 56px;
             font-size: 16px;
             line-height: 24px;
-            color: #7E7E82;
             margin: 0;
             margin-bottom: 16px;
-            color: #7e7e82;
+            color: $color-subtitle-text;
             font-weight: 400;
-            background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
-            border-top: 1px solid #d9fff5;
+            background: linear-gradient(-270deg, $color-bacground-grey 0%, $color-bacground-white 98.61%);
+            border-top: 1px solid $color-title-border;
             padding-top: 16px;
         }
         &__table {
             width: 95%;
             margin-left: 32px;
             border-collapse: collapse;
-            background: #FFFFFF;
+            background: $color-bacground-white;
             border: none;
             border-radius: 6px;
         }
         &__columns-title {
-            background: #F8F8F8;
+            background: $color-bacground-grey;
         }
         &__column-title {
-            // font-family: 'TT Lakes';
             font-size: 14px;
             line-height: 16px;
-            color: #7E7E82;
+            color: $color-subtitle-text;
             mix-blend-mode: normal;
             opacity: 0.72;
             height: 65px;
@@ -62,64 +57,38 @@
             margin: 0;
             padding: 0;
             height: 65px;
-            // font-family: 'TT Lakes';
             font-size: 14px;
             line-height: 18px;
             letter-spacing: 0.2px;
-            color: #1B1C21;
+            color: $color-text;
             &:not(:last-child) {
-                box-shadow: 0px 33px 0 -32px #EAEAEA;
+                box-shadow: 0px 33px 0 -32px $color-card-border;
             }
         }
         &__service {
             padding-left: 24px;
         }
-        // &__btn {
-        //     position: relative;
-        //     display: flex;
-        //     justify-content: space-between;
-        //     text-transform: uppercase;
-        //     letter-spacing: -0.15px;
-        //     border: none;
-        //     color: #FFFFFF;
-        //     width: 119px;
-        //     height: 32px;
-        //     border-radius: 16px;
-        //     background-color: #ff3e79;
-        //     -webkit-border-radius: 16px;
-        //     -moz-border-radius: 16px;
-        //     -ms-border-radius: 16px;
-        //     -o-border-radius: 16px;
-        //     text-align: start;
-        //     padding: 4px 12px;
-        //     align-items: center;
-        // }
-        // &__btn::after {}
-        // &__btn:hover {
-        //     color: #ff3e79;
-        //     background-color: #f0c8d4;
-        // }
         &__gloss {
             margin-left: 32px;
             margin-top: 16px;
             width: 420px;
         }
         &__text {
-            color: #1b1c21;
+            color: $color-text;
         }
         &__proposal {
             margin-top: 24px;
             display: inline-block;
             position: relative;
             font-size: 16px;
-            color: #1b1c21;
+            color: $color-text;
             font-weight: 600;
             letter-spacing: -0.2px;
         }
         &__proposal::after {
             content: "";
             position: absolute;
-            background: url("/src/assets/img/slider_btn/dropdown.svg") no-repeat;
+            background: url("../img/slider_btn/dropdown.svg") no-repeat;
             width: 12px;
             height: 12px;
             transform: translate(10px, 3px);
