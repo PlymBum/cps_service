@@ -1,6 +1,7 @@
-let servicesList = [...document.querySelectorAll('.services__item')]
+const servicesList = document.querySelector('.services__list');
 
-servicesList.map(el => el.addEventListener('click', () => {
-    document.querySelector('.services__item--active').classList.remove('services__item--active')
-    el.classList.add('services__item--active')
-}))
+servicesList.addEventListener('click', (evt) => {
+    const serviceItem = evt.target;
+    servicesList.querySelector('.services__item--active').classList.remove('services__item--active')
+    serviceItem.classList.add('services__item--active')
+})

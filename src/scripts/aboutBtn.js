@@ -1,6 +1,6 @@
-let showMoreBtn = document.querySelector('.about__show-more-btn');
+const showMoreBtn = document.querySelector('.about__show-more-btn');
 
-let textBlock = document.querySelector('.about__text');
+const textBlock = document.querySelector('.about__text');
 
 showMoreBtn.addEventListener('click', () => {
     textBlock.classList.toggle('about__text--open')
