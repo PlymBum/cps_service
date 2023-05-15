@@ -1,51 +1,51 @@
-@import '/utils/fonts.scss';
-@import '/header.scss';
-@import '/header.scss';
-@import '/button/_button_round.scss';
-@import '/button/_button_oval.scss';
-@import '/services.scss';
-@import '/about.scss';
-@import '/repair.scss';
-@import '/repair-brands.scss';
-@import '/repair-types.scss';
-@import '/repair-price.scss';
-@import '/footer.scss';
-@import '/menu.scss';
-@import '/price.scss';
-@import '/form.scss';
-@import '/form-feedback.scss';
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: "TT Lakes";
-    margin: 0;
-    padding: 0;
-    border: none;
-    min-width: 320px;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100vh;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    font-family: inherit;
-}
-
-li {
-    list-style-type: none;
-}
-
-.no-scroll {
-    overflow: hidden;
-}
+ @import '../fonts/fonts.css';
+ @import '/header.scss';
+ @import '/header.scss';
+ @import '/button/_button_round.scss';
+ @import '/button/_button_oval.scss';
+ @import '/services.scss';
+ @import '/about.scss';
+ @import '/repair.scss';
+ @import '/repair-brands.scss';
+ @import '/repair-types.scss';
+ @import '/repair-price.scss';
+ @import '/footer.scss';
+ @import '/menu.scss';
+ @import '/price.scss';
+ @import '/form.scss';
+ @import '/form-feedback.scss';
+ html {
+     box-sizing: border-box;
+ }
+ 
+ *,
+ *:before,
+ *:after {
+     box-sizing: inherit;
+ }
+ 
+ body {
+     font-family: "TT Lakes";
+     margin: 0;
+     padding: 0;
+     border: none;
+     min-width: 320px;
+     max-width: 1600px;
+     margin-left: auto;
+     margin-right: auto;
+     height: 100vh;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: inherit;
+     font-family: inherit;
+ }
+ 
+ li {
+     list-style-type: none;
+ }
+ 
+ .no-scroll {
+     overflow: hidden;
+ }
