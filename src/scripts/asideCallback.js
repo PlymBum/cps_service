@@ -1,14 +1,18 @@
-import disableMainScroll from "./disableMainScroll"
+import disableMainScroll from "./disableMainScroll";
+import sidebarOpenAddHandler from "./asideOpen";
 
-const btnCall = [...document.querySelectorAll('.btn__callback')]
 
+const headerBtnCallback = document.querySelector('.header__button--call');
+const menuBtnCallback = document.querySelector('.footer__btn--call');
 
 const sidebarCallback = document.querySelector('.sidebar__callback')
 
-btnCall.map(el => el.addEventListener('click', () => {
-    sidebarCallback.classList.add('sidebar--open')
-    disableMainScroll(true)
-}))
+
+
+sidebarOpenAddHandler(headerBtnCallback, sidebarCallback)
+sidebarOpenAddHandler(menuBtnCallback, sidebarCallback)
+
+
 
 const btnClose = document.querySelector('.sidebar__btn--close-callback')
 

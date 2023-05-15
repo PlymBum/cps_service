@@ -1,12 +1,13 @@
 import disableMainScroll from "./disableMainScroll"
+import sidebarOpenAddHandler from "./asideOpen"
 
-const btnMessage = [...document.querySelectorAll('.btn__msg')]
+const footerBtn = document.querySelector('.footer__btn--msg')
+const headerBtn = document.querySelector('.header__button--chat')
 const sidebarFeedback = document.querySelector('.sidebar__feedback')
 
-btnMessage.map(el => el.addEventListener('click', () => {
-    sidebarFeedback.classList.add('sidebar--open')
-    disableMainScroll(true)
-}))
+sidebarOpenAddHandler(footerBtn, sidebarFeedback);
+sidebarOpenAddHandler(headerBtn, sidebarFeedback);
+
 
 const btnClose = document.querySelector('.sidebar__btn--close-feedback')
 
